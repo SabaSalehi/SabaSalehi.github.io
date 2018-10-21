@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth
+}
+body {
+    margin: 0;
+    font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+    /*Verdana,arial,x-locale-body,sans-serif*/
+    line-height: 1.8em;
+}
+.only_big_screens {
+    display: none
+}
+.only_small_screens {
+    display: inline
+}
+
+
+#Header_div {
+    color: #fff;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(158,192,219,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(158,192,219,1);
+    box-shadow: 0px 5px 10px 0px rgba(158,192,219,1)
+}
+#Header_top {
+    width: 90vw;
+    padding: 5vh 5vw 2vh 5vw;
+    background-color: rgb(70,151,221);
+    display: flex;
+    justify-content: space-between
+}
+#name {
+    padding: 0;
+    font-weight: bold;
+    font-size: 10vw
+}
+#menu_sign {
+    
+}
+#section_tags {
+    width: 90vw;
+    padding: 5vh 5vw 2vh 5vw;
+    background-color: rgb(70,151,221);
+    display: none;
+    flex-direction: column;
+}
+ a:link {
+    text-decoration: none;
+    color: #fff
+}
+ a:visited {
+    text-decoration: none;
+    color: #fff
+}
+ a:hover{
+    color: rgb(201, 231, 241)
+}
+ a:active{
+    color: rgb(201, 231, 241)
+}
+
+
+#About_div {
+    background-color: rgb(201, 231, 241);
+    width: 90vw;
+    overflow: auto;
+    padding: 2vh 5vw 2vh 5vw;
+    position: relative;
+    z-index: -1;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(226,240,245,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(226,240,245,1);
+    box-shadow: 0px 5px 10px 0px rgba(226,240,245,1)
+}
+h1 {
+    font-size: 14vw
+}
+h2 {
+    font-size: 9vw
+}
+#saba_image {
+    width: 90vw;
+    height: 90vw;
+    border-radius: 45vw;
+    float: left;
+    background-image: url("saba.jpg");
+    background-position: center;
+    background-size: cover
+}
+#about_text {
+    width: 90vW
+}
+
+
+#CV_div {
+    width: 90vw;
+    overflow: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    position: relative;
+    font-size: 0.8em
+}
+.CV_segment_title {
+    font-weight: bold;
+    font-size: x-large;
+    vertical-align: text-top;
+    padding-right: 2vw;
+    padding-bottom: 2vw
+}
+.CV_segment_content {
+    padding-bottom: 3vw;
+    padding-left: 5vw
+}
+.subtext {
+    padding-left: 1.2em
+}
+
+
+#Contact_div {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    background-color: rgb(70,151,221);
+    width: 90vw;
+    padding: 2vh 5vw 2vh 5vw;
+    -webkit-box-shadow: 0px -5px 10px 0px rgb(203, 221, 236);
+    -moz-box-shadow: 0px -5px 10px 0px rgb(203, 221, 236);
+    box-shadow: 0px -5px 10px 0px rgb(203, 221, 236);
+    font-size: large
+}
+#Contact_div td {
+    padding-right: 5em
+}

@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Saba Salehi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="phone.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="Header_div">
+        <div id=Header_top>
+            <div id="name">Saba Salehi</div>
+            <div id="menu_sign" class="only_small_screens">
+                <a href="javascript:void(0);" onclick="toggle_menu()"><i id="menu_icon" class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        <div id="section_tags">
+            <a href="#Research">Research Interests</a>
+            <a href="#Education">Education</a>
+            <a href="#Awards">Awards</a>
+            <a href="#RExperience">Research Experiences</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Work">Working Experience</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact_div">Contact</a>
+        </div>
+    </div>
+    <script>
+        function toggle_menu() {
+            var menu = document.getElementById("section_tags");
+            var icon = document.getElementById("menu_icon");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+                icon.className = "fa fa-bars";
+            } else {
+                menu.style.display = "flex";
+                icon.className = "fa fa-times";
+            }
+        }
+    </script>
+    <div id="About_div">
+        <table class="only_small_screens">
+            <tr>
+                <td id="Hello_text">
+                    <h1>Hello,</h1>
+                    <h2>a bit about me:</h2>
+                </td>
+            </tr>
+            <tr>
+                <td id="saba_image">
+                </td>
+            </tr>
+            <td id="about_text">
+                <p>I am Seyedeh Saba Salehi, a senior Computer Science undergraduate in the Mathematical Sciences
+                    Department at Sharif University of Technology.</p>
+            </td>
+            </tr>
+        </table>
+        <table class="only_big_screens">
+            <tr>
+                <td id="saba_image">
+                </td>
+                <td id="about_text">
+                    <h1>Hello,</h1>
+                    <h2>a bit about me:</h2>
+                    <p>I am Seyedeh Saba Salehi, a senior Computer Science undergraduate in the Mathematical
+                        Sciences
+                        Department at Sharif University of Technology.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="CV_div">
+        <table>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Research Interests
+                </td>
+            </tr>
+            <tr class="CV_row" id="Research">
+
+                <td class="CV_segment_title only_big_screens">
+                    Research Interests
+                </td>
+                <td class="CV_segment_content">
+                    &#9671; Bioinformatics
+                    <br> &#9671; Computational Biology
+                    <br> &#9671; Medical Imaging
+                    <br> &#9671; Theory of Computation and Complexity Theory
+                </td>
+            </tr>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Education
+                </td>
+            </tr>
+            <tr class="CV_row" id="Education">
+                <td class="CV_segment_title only_big_screens">
+                    Education
+                </td>
+                <td class="CV_segment_content">
+                    <b>&#9671; Sharif University of Technology, Tehran, Iran (2014 - Present)</b>
+                    <div class="subtext">
+                        B.Sc in Computer Science GPA to date: 16.94/20
+                        <br><b>Relevant Courses:</b>
+                        <br>&emsp; Design and Analysis of Algorithms (18.8/20),
+                        <br>&emsp; Intro to Bioinformatics (20/20),
+                        <br>&emsp; Advanced Bioinformatics (not assigned yet),
+                        <br>&emsp; Linear Algebra (16/20),
+                        <br>&emsp; Theory of Computation (18.1/20),
+                        <br>&emsp; Advanced Graph Theory (16.1/20),
+                        <br>&emsp; Stochastic Processes (17/20),
+                        <br>&emsp; Linear Programming (16.9/20),
+                        <br>
+                        <b>ongoing:</b> Artificial Intelligence
+                    </div>
+                    <b>&#9671; Farzanegan High School, National Organization of Developing Exceptional Talents</b>
+                    <div class="subtext">
+                        Diploma in Mathematics and Physics Discipline
+                    </div>
+                </td>
+                </td>
+            </tr>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Awards
+                </td>
+            </tr>
+            <tr class="CV_row" id="Awards">
+                <td class="CV_segment_title only_big_screens">
+                    Awards
+                </td>
+                <td class="CV_segment_content">
+                    &#9671; Ranked 536 (among about 85000 students) in the National Entrance Exam for Public
+                    Universities of Iran
+                </td>
+            </tr>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Research Experiences
+                </td>
+            </tr>
+            <tr class="CV_row" id="RExperience">
+                <td class="CV_segment_title only_big_screens">
+                    Research Experiences
+                </td>
+                <td class="CV_segment_content">
+                    <b>&#9671; Integrative Analysis of Microarray Data to Predict Disease-associated Genes in the
+                        Pathogenesis of Systemic Sclerosis (ongoing)</b>
+                    <br>
+                    <b>&#9671; Detecting Traumatic Lesions on CT Using Deep Learning Methods (ongoing)</b>
+                    <br>
+                </td>
+            </tr>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Projects
+                </td>
+            </tr>
+            <tr class="CV_row" id="Projects">
+                <td class="CV_segment_title only_big_screens">
+                    Projects
+                </td>
+                <td class="CV_segment_content">
+                    <b>&#9671; Some Image Processing and Computer Vision methods in matlab</b>
+                    <div class="subtext">
+                        including: histogram equalization, template matching, texture synthesizing, normalized cut,
+                        poisson blending, morphing, making panorama, measuring heights, and bag of visual words
+                    </div>
+                    <b>&#9671; Phylogenetic Tree of Ebola Viruses in R</b>
+                    <div class="subtext">
+                        including: making the phylogenetic tree of ebola viruses and marburg virus using their
+                        genomes, calculating the time difference of each pair and each specie with the common
+                        ancestor,
+                        and the time of creation of the next variation of ebula viruses
+                    </div>
+                </td>
+            </tr>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Working Experiences
+                </td>
+            </tr>
+            <tr class="CV_row" , id="Work">
+                <td class="CV_segment_title only_big_screens">
+                    Working Experiences
+                </td>
+                <td class="CV_segment_content">
+                    <b>&#9671; Teaching Assistant</b>
+                    <br>
+                    <div class="subtext">
+                        Advanced Programming, Sharif University of Technology, Dr. Boomari, Spring 2016
+                    </div>
+                    <div class="subtext">
+                        Theory of Computation, Sharif University of Technology, Dr. Ahadi, Spring 2018
+                    </div>
+                    <b>&#9671; Summer internship at Rahnema Corporation</b>
+                    <div class="subtext">
+                        developing a location based social media application for android, summer 2017
+                    </div>
+                </td>
+            </tr>
+            <tr class="CV_segment_title only_small_screens">
+                <td>
+                    Skills
+                </td>
+            </tr>
+            <tr class="CV_row" id="Skills">
+                <td class="CV_segment_title only_big_screens">
+                    Skills
+                </td>
+                <td class="CV_segment_content">
+                    <b>&#9671; Programing Languages</b>
+                    <div class="subtext">
+                        Expert in: Java, C++, and MATLAB Experience in: HTML, CSS, python, javascript, react
+                        native,
+                        Objective C, R (experience with biological libraries)
+                    </div>
+                    <b>&#9671; Team Work</b>
+                    <div class="subtext">
+                        Experience in working with Scrum framework
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="Contact_div">
+        <a href="tel:00989375158200"><i class="fa fa-phone"></i>
+            <div class="only_big_screens">0098 937 515 8200</div>
+        </a>
+        <a href="mailto:s.saba.salehi@gmail.com" target="_top"><i class="fa fa-envelope"></i>
+            <div class="only_big_screens">s.saba.salehi@gmail.com</div>
+        </a>
+        <a href="saba salehi.pdf" download><i class="fa fa-file-pdf-o"></i>
+            <div class="only_big_screens">download pdf version</div>
+        </a>
+    </div>
+</body>
+
+</html>
+
+<!--
+<td>About</td>
+<td>Education</td>
+<td>Honors &amp Awards</td>
+<td>Research Interests</td>
+<td>Projects</td>
+<td>Working Experience</td>
+<td>Skills</td>
+-->
