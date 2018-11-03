@@ -25,11 +25,29 @@
     <!-- Meta Tags Generated via http://heymeta.com -->
 
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" media="screen and (max-width: 1649px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="phone.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </head>
 
-<body>
+<body onresize="checkMenuDisplay()">
     <div id="Header_div">
         <div id=Header_top>
             <div id="name">Saba Salehi</div>
@@ -49,15 +67,22 @@
         </div>
     </div>
     <script>
+        var menu = document.getElementById("section_tags");
+        var icon = document.getElementById("menu_icon");
         function toggle_menu() {
-            var menu = document.getElementById("section_tags");
-            var icon = document.getElementById("menu_icon");
             if (menu.style.display === "flex") {
                 menu.style.display = "none";
                 icon.className = "fa fa-bars";
             } else {
                 menu.style.display = "flex";
                 icon.className = "fa fa-times";
+            }
+        }
+        function checkMenuDisplay() {
+            if (window.innerWidth > 768 || icon.className == "fa fa-times") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
             }
         }
     </script>

@@ -1,0 +1,28 @@
+#name {
+    width: 85vw;
+    padding: 5vh 7.5vw 2vh 7.5vw;
+}
+#section_tags {
+    width: 85vw;
+    padding: 1vh 7.5vw 5vh 7.5vw;
+}
+
+
+#About_div {
+    width: 85vw;
+    padding: 5vh 7.5vw 5vh 7.5vw;
+}
+#about_text {
+    width: 58vw;
+}
+
+#CV_div {
+    width: 85vw;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+}
+
+
+#Contact_div {
+    padding: 5vh 7.5vw 5vh 7.5vw;
+}
