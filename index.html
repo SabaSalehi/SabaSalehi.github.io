@@ -30,7 +30,19 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            var minH = $("#Header_div").outerHeight() + $("#About_div").outerHeight() - $(window).height();
+            if (height > minH) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+        });
         $(document).ready(function () {
+            var contact_div = $("#Contact_div");
+            var bottom = contact_div.outerHeight() + 0.01 * $(window).height();
+            $("#back2Top").css("bottom", bottom);
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
                 if (this.hash !== "") {
@@ -43,11 +55,18 @@
                     });
                 } // End if
             });
+            // scroll to top function
+            $("#back2Top").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
         });
     </script>
 </head>
 
 <body>
+    <a id="back2Top" class="only_small_screens" href="#"><i id="menu_icon" class="fa fa-arrow-circle-up"></i></a>
     <div id="Header_div">
         <div id=Header_top>
             <div id="name">Saba Salehi</div>
