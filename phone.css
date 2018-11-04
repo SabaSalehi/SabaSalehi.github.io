@@ -23,22 +23,36 @@ body {
     padding: 5vh 5vw 2vh 5vw;
     background-color: rgb(70,151,221);
     display: flex;
+    position: relative;
     justify-content: space-between
 }
 #name {
     padding: 0;
     font-weight: bold;
-    font-size: 10vw
+    font-size: 10vw;
+    height: 10vh;
+    line-height: 10vh;
+    vertical-align: middle
 }
 #menu_sign {
-    
+    font-size: 8vw;
+    height: 10vh;
+    line-height: 10vh;
+    vertical-align: middle
 }
 #section_tags {
     width: 90vw;
-    padding: 5vh 5vw 2vh 5vw;
+    padding: 0 5vw 0 5vw;
     background-color: rgb(70,151,221);
-    display: none;
+    display: flex;
     flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
  a:link {
     text-decoration: none;
@@ -53,6 +67,9 @@ body {
 }
  a:active{
     color: rgb(201, 231, 241)
+}
+#section_tags a{
+    padding-bottom: 1vh
 }
 
 

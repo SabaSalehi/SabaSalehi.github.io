@@ -30,7 +30,8 @@ body {
     width: 60vw;
     padding: 1vh 20vw 5vh 20vw;
     background-color: rgb(70,151,221);
-    font-size: large
+    font-size: large;
+    text-align: center;
 }
  a:link {
     text-decoration: none;
@@ -47,7 +48,8 @@ body {
     color: rgb(201, 231, 241)
 }
 #section_tags a {
-    padding-right: 1.2em
+    padding-left: 0.6em;
+    padding-right: 0.6em
 }
 
 

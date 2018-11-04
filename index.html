@@ -47,7 +47,7 @@
     </script>
 </head>
 
-<body onresize="checkMenuDisplay()">
+<body>
     <div id="Header_div">
         <div id=Header_top>
             <div id="name">Saba Salehi</div>
@@ -70,19 +70,12 @@
         var menu = document.getElementById("section_tags");
         var icon = document.getElementById("menu_icon");
         function toggle_menu() {
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
+            if (menu.style.maxHeight) {
+                menu.style.maxHeight = null;
                 icon.className = "fa fa-bars";
             } else {
-                menu.style.display = "flex";
+                menu.style.maxHeight = menu.scrollHeight + "px";
                 icon.className = "fa fa-times";
-            }
-        }
-        function checkMenuDisplay() {
-            if (window.innerWidth > 768 || icon.className == "fa fa-times") {
-                menu.style.display = "flex";
-            } else {
-                menu.style.display = "none";
             }
         }
     </script>
@@ -120,12 +113,13 @@
     </div>
     <div id="CV_div">
         <table>
+            <tr id="Research"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Research Interests
                 </td>
             </tr>
-            <tr class="CV_row" id="Research">
+            <tr class="CV_row">
 
                 <td class="CV_segment_title only_big_screens">
                     Research Interests
@@ -137,12 +131,13 @@
                     <br> &#9671; Theory of Computation and Complexity Theory
                 </td>
             </tr>
+            <tr id="Education"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Education
                 </td>
             </tr>
-            <tr class="CV_row" id="Education">
+            <tr class="CV_row">
                 <td class="CV_segment_title only_big_screens">
                     Education
                 </td>
@@ -171,12 +166,13 @@
                 </td>
                 </td>
             </tr>
+            <tr id="Awards"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Awards
                 </td>
             </tr>
-            <tr class="CV_row" id="Awards">
+            <tr class="CV_row">
                 <td class="CV_segment_title only_big_screens">
                     Awards
                 </td>
@@ -185,12 +181,13 @@
                     Universities of Iran
                 </td>
             </tr>
+            <tr id="RExperience"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Research Experiences
                 </td>
             </tr>
-            <tr class="CV_row" id="RExperience">
+            <tr class="CV_row">
                 <td class="CV_segment_title only_big_screens">
                     Research Experiences
                 </td>
@@ -204,12 +201,13 @@
                     <br>
                 </td>
             </tr>
+            <tr id="Projects"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Projects
                 </td>
             </tr>
-            <tr class="CV_row" id="Projects">
+            <tr class="CV_row">
                 <td class="CV_segment_title only_big_screens">
                     Projects
                 </td>
@@ -228,12 +226,13 @@
                     </div>
                 </td>
             </tr>
+            <tr id="Work"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Working Experiences
                 </td>
             </tr>
-            <tr class="CV_row" , id="Work">
+            <tr class="CV_row">
                 <td class="CV_segment_title only_big_screens">
                     Working Experiences
                 </td>
@@ -252,12 +251,13 @@
                     </div>
                 </td>
             </tr>
+            <tr id="Skills"></tr>
             <tr class="CV_segment_title only_small_screens">
                 <td>
                     Skills
                 </td>
             </tr>
-            <tr class="CV_row" id="Skills">
+            <tr class="CV_row">
                 <td class="CV_segment_title only_big_screens">
                     Skills
                 </td>
