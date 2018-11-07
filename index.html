@@ -58,17 +58,18 @@
     <script>
         $(window).scroll(function () {
             var height = $(window).scrollTop();
-            var minH = $("#Header_div").outerHeight() + $("#About_div").outerHeight() - $(window).height();
+            var minH = $("#Header_div").outerHeight() + $("#About_div").outerHeight() + $("#back2Top").outerHeight() - $(window).height();
+            var right = 0.01 * $(window).height();
+            var bottom = right + $("#Contact_div").outerHeight();
             if (height > minH) {
                 $('#back2Top').fadeIn();
+                $("#back2Top").css({ "bottom": "0", "right": "0", "padding-bottom": bottom, "padding-right": right });
             } else {
                 $('#back2Top').fadeOut();
             }
         });
         $(document).ready(function () {
             var contact_div = $("#Contact_div");
-            var bottom = contact_div.outerHeight() + 0.01 * $(window).height();
-            $("#back2Top").css("bottom", bottom);
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
                 if (this.hash !== "") {
@@ -189,11 +190,11 @@
                 <td class="CV_segment_content">
                     <b>&#9671; Sharif University of Technology, Tehran, Iran (2014 - Present)</b>
                     <div class="subtext">
-                        B.Sc in Computer Science GPA to date: 16.98/20
+                        B.Sc in Computer Science GPA to date: 17/20
                         <br><b>Relevant Courses:</b>
                         <br>&emsp; Design and Analysis of Algorithms (18.8/20),
                         <br>&emsp; Intro to Bioinformatics (20/20),
-                        <br>&emsp; Advanced Bioinformatics (18.8/20),
+                        <br>&emsp; Advanced Bioinformatics (19.5/20),
                         <br>&emsp; Linear Algebra (16/20),
                         <br>&emsp; Principals of Image Processing (18/20),
                         <br>&emsp; Computer Vision (17/20),
@@ -237,12 +238,14 @@
                     Research Experiences
                 </td>
                 <td class="CV_segment_content">
-                    <b>&#9671; Integrative Analysis of Microarray Data to Predict Disease-associated Genes in the
-                        Pathogenesis of Systemic Sclerosis(SSc) (April 2018 - Present)</b>
-                    <br> We discovered some previously unknown genes as potential causes of SSc under supervision of
-                    Dr. Ali Sharifi and our results are going to be submitted soon.
-                    <br>
-                    <b>&#9671; Detecting Traumatic Lesions on CT Using Deep Learning Methods (September 2018 - Present)</b>
+                    <b>&#9671; Are Biological Processes and Pathways Tissue-specific in Systemic Sclerosis? </b>
+                    <div class="subtext">
+                        <b>An Integrative Gene Expression Analysis (April 2018 - Present)</b>
+                        <br> This Research is under supervision of Prof. Ali Sharifi and our results are going
+                        to be submitted soon.
+                    </div>
+                    <b>&#9671; Detecting Traumatic Lesions on CT Using Deep Learning Methods (September 2018 -
+                        Present)</b>
                     <br>
                 </td>
             </tr>
