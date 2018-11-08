@@ -58,14 +58,17 @@
     <script>
         $(window).scroll(function () {
             var height = $(window).scrollTop();
+            var width = $(window).width();
             var minH = $("#Header_div").outerHeight() + $("#About_div").outerHeight() + $("#back2Top").outerHeight() - $(window).height();
             var right = 0.01 * $(window).height();
             var bottom = right + $("#Contact_div").outerHeight();
-            if (height > minH) {
-                $('#back2Top').fadeIn();
-                $("#back2Top").css({ "bottom": "0", "right": "0", "padding-bottom": bottom, "padding-right": right });
-            } else {
-                $('#back2Top').fadeOut();
+            if (width <= 768) {
+                if (height > minH) {
+                    $('#back2Top').fadeIn();
+                    $("#back2Top").css({ "bottom": "0", "right": "0", "padding-bottom": bottom, "padding-right": right });
+                } else {
+                    $('#back2Top').fadeOut();
+                }
             }
         });
         $(document).ready(function () {
